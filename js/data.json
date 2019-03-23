@@ -1,0 +1,45 @@
+{
+  "categoryName": "Inventory",
+  "Appliances": [
+    {
+      "type": "Stove",
+      "quantity": "2",
+      "location": "TS2"
+    },
+    {
+      "type": "Fridge",
+      "quantity": "1",
+      "location": "TS1"
+
+    },
+    {
+      "type": "Dishwasher",
+      "quantity": "2",
+      "location": "TS2"
+    },
+    {
+      "type": "Dryer",
+      "quantity": "1",
+      "location": "TS1"
+
+    }
+  ],
+
+  "Electrical": [
+    {
+      "type": "Kitchen Light",
+      "quantity": "5",
+      "location": "Maintenance Shop"
+    },
+    {
+      "type": "Under Cabinet Light",
+      "quantity": "3",
+      "location": "Maintenance Shop"
+    },
+    {
+      "type": "Light Switch",
+      "quantity": "15",
+      "location": "Maintenance Shop"
+    }
+  ]
+}

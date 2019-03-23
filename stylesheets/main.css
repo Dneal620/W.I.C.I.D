@@ -1,0 +1,167 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+}
+body{
+  text-align:center;
+  background:lightgray;
+
+}
+
+#dropDownNav{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  width:100%;
+  height:10px;
+  background-color:black;
+  opacity:0.8;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+#dropDownNav ul{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+}
+
+#dropDownNav a{
+  color:white;
+  text-decoration:none;
+  font-size:24px;
+  margin-top:60px;
+}
+
+#dropDownNav ul li a{
+  color:white;
+  text-decoration:none;
+  font-size:24px;
+}
+
+#scrollBtn{
+  display:flex;
+  align-items:flex-end;
+}
+
+header{
+  margin-bottom:80px;
+  font-size:45px;
+  text-shadow:5px 5px 5px gray;
+  border-bottom:5px solid green;
+}
+.header_comment{
+  color:black;
+}
+#main_section1{
+  display:flex;
+  padding:20px;
+}
+#main_div1{
+  width:250px;
+  background:whitesmoke;
+  border:1px solid black;
+  border-radius:25px;
+  margin-right:20px;
+
+
+}
+#main_div1 ul{
+  list-style:none;
+  text-align:left;
+  font-weight:bold;
+  font-size:21px;
+  margin:20px;
+
+}
+
+#main_div1 ul li{
+  margin-bottom:10px;
+}
+#main_div2{
+  display:grid;
+  width:100%;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: 50px 200px;
+  grid-gap:3px;
+  border:1px solid black;
+  background:whitesmoke;
+  border-radius:25px;
+  font-weight:bold;
+  padding:20px;
+}
+
+#item{
+  width:300px;
+}
+
+#item p{
+  color:blue;
+  border-bottom:2px solid blue;
+  text-align:left;
+  letter-spacing:3px;
+  font-size:24px;
+  font-weight:bold;
+}
+
+#location p{
+  color:blue;
+  border-bottom:3px solid blue;
+  text-align:left;
+  letter-spacing:3px;
+  font-size:24px;
+  font-weight:bold;
+}
+
+#quantity p{
+  color:blue;
+  border-bottom:3px solid blue;
+  text-align:left;
+  letter-spacing:3px;
+  font-size:24px;
+  font-weight:bold;
+}
+
+#inventory_header{
+  grid-column:1/-1;
+  font-weight:bold;
+  font-size:48px;
+}
+
+#inventory_header p{
+  position:relative;
+  top:-30px;
+}
+#item{
+  text-align:left;
+}
+#item li{
+  list-style:none;
+  padding:10px;
+  padding-left:0;
+}
+#location{
+  text-align:left;
+}
+#location li{
+  list-style:none;
+  padding:10px;
+  padding-left:0;
+}
+#quantity{
+  text-align:left;
+}
+#quantity li{
+  list-style:none;
+  padding:10px;
+  padding-left:0;
+}
+footer{
+  border-top:1px solid green;
+}
+
+
+
