@@ -4,28 +4,75 @@
 
 <head>
     <meta charset='utf-8' />
-    <title>W.I.C.I.D</title>
-    <link rel='stylesheet' href='./stylesheets/login.css' />
+    <title><%=title%></title>
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <script href="/javascripts/main.js" ></script>
 
 </head>
 
 <body>
 
-<div id="login_page">
+<header>
 
-    <div id="form">
+    <h3 class="header_title">Inventory</h3>
+    <h5 class="header_comment">The Woodside East Inventory Control and ID</h5>
 
-        <form action="appliances.html">
 
-            <input type="text" placeholder="name"/>
-            <input type="text" placeholder="word"/>
-            <button>Login</button>
-            <p id="message">Already Registered? <a href="">Login</a></p>
-        </form>
+</header>
+
+<section id='main_section1'>
+
+    <div id='main_div1'>
+
+        <ul>
+
+             <li><a href="appliances.html">Appliances</a></li>
+            <li><a href="electrical.html">Electrical</a></li>
+            <li><a href="plumbing.html">Plumbing</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="paint.html">Paint</a></li>
+
+        </ul>
 
     </div>
 
-</div>
+    <div id='main_div2'>
+        <div id="inventory_header">
+            <p><%=title%></p>
+        </div>
+        <div id="item">
+            <p>Item</p>
+            <ul>
+                <% videodata.Appliances.forEach(function(item){ %>
+                    <li><%= item.type %></li>
+                <% })%>
+            </ul>
+        </div>
+
+        <div id="location">
+            <p>Location</p>
+            <ul>
+                <% videodata.Appliances.forEach(function(item){ %>
+                    <li><%= item.location %></li>
+                <% })%>
+            </ul>
+        </div>
+
+        <div id="quantity">
+            <p>Quantity</p>
+            <ul>
+                <% videodata.Appliances.forEach(function(item){ %>
+                    <li><%= item.quantity %></li>
+                <% })%>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>W.I.C.I.D is Good.<br />v1.0</p>
+</footer>
 
 </body>
 
