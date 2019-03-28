@@ -68,9 +68,8 @@ header{
   border:1px solid black;
   border-radius:25px;
   margin-right:20px;
-
-
 }
+
 #main_div1 ul{
   display:flex;
   flex-direction:column;
@@ -90,7 +89,7 @@ header{
   display:grid;
   width:100%;
   grid-template-columns:repeat(3, 1fr);
-  grid-template-rows: 50px 200px;
+  grid-template-rows: 50px 1fr;
   grid-gap:3px;
   border:1px solid black;
   background:whitesmoke;
@@ -124,10 +123,11 @@ header{
   font-weight:bold;
 }
 
-#item li{
+#item li p{
   list-style:none;
   padding:10px;
   padding-left:0;
+  font-size:16px;
 }
 
 #location{
